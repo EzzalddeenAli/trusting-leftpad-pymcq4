@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "env",
+    "react"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "proposal-class-properties"
+  ],
+  "parserOpts": {
+    "plugins": [
+      "dynamicImport"
+    ]
+  }
+}

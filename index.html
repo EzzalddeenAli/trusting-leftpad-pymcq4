@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sanitizer Tool</title>
+    <meta charset="UTF-8" />
+
+    <script src="src/index.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="inputBar">
+        <div class="label">
+          Paste rich text content here...
+          <button class="action good" id="addExampleButton">
+            Add Word example
+          </button>
+          <button class="action good" id="addFlightsExampleButton">
+            Add flights example
+          </button>
+        </div>
+
+        <div class="inputBox" id="inputPasteHTML" contenteditable="true"></div>
+
+        <div class="label">
+          ...or paste raw HTML here
+          <button class="action" id="viewPrettierButton">
+            View prettier
+          </button>
+          <button class="action good" id="clearButton">Clear</button>
+          <button class="action good" id="initButton">Init</button>
+        </div>
+        <textarea class="inputBox" id="inputRawHTML"></textarea>
+      </div>
+      <div class="outputPane" id="previewers">
+        Here be previewers, they haven't initialized yet...
+      </div>
+    </div>
+  </body>
+</html>
